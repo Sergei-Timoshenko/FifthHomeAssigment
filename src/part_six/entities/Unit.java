@@ -1,4 +1,4 @@
-package entities.units;
+package part_six.entities;
 
 public abstract class Unit {
     protected String className;

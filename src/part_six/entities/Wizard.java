@@ -1,6 +1,6 @@
-package entities.units;
+package part_six.entities;
 
-import entities.utils.UnitsRandom;
+import part_six.utils.UnitUtils;
 
 public class Wizard extends Unit {
 
@@ -24,7 +24,7 @@ public class Wizard extends Unit {
 
     @Override
     public Double getDealtDamageValue() {
-        return minDamage + (maxDamage - minDamage) * UnitsRandom.getRandomDamageMultiplier();
+        return minDamage + (maxDamage - minDamage) * UnitUtils.getRandomDamageMultiplier();
     }
 
     @Override

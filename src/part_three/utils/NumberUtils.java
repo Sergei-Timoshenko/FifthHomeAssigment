@@ -5,10 +5,10 @@ import part_three.interfaces.Operations;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PartThreeUtils<T extends Number> implements Operations<T> {
+public class NumberUtils<T extends Number> implements Operations<T> {
     private final List<T> numbers;
 
-    public PartThreeUtils(List<T> numbers) {
+    public NumberUtils(List<T> numbers) {
         this.numbers = numbers;
     }
 

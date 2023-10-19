@@ -1,2 +1,24 @@
-package part_four;public class PartFour {
+package part_four;
+
+import part_four.entities.Audio;
+import part_four.entities.Image;
+import part_four.entities.Media;
+import part_four.entities.Video;
+
+import java.util.ArrayList;
+
+public class PartFour {
+    public static void run() {
+        ArrayList<Media> media = new ArrayList<>();
+
+        Media firstMedia = new Audio("Meow",  10L, 1L);
+        Media secondMedia = new Video("How to open a fridge", 100L, 10L);
+        Media thirdMedia = new Image("Serhii's photo", 50L, 16, 9);
+
+        media.add(firstMedia);
+        media.add(secondMedia);
+        media.add(thirdMedia);
+
+        media.forEach(Media::displayInfo);
+    }
 }

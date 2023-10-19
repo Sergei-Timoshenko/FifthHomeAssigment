@@ -2,7 +2,7 @@ package part_six.utils;
 
 import java.util.Random;
 
-public class PartSixUtils {
+public class UnitUtils {
     private static final Random random = new Random(System.nanoTime());
 
     public static Double getRandomDamageMultiplier() {
